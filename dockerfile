@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer "Henk <henk@wobbes.net>"
+LABEL maintainer "Henkez <henk.wobbes(at)gmail.com>"
 
 RUN apk add --no-cache python3 \
     libusb \
