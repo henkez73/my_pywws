@@ -1,0 +1,14 @@
+---
+version: "3"
+services:
+  pywws:
+    image: henkez/my_pywws:latest
+    container_name: my_pywws
+    privileged: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - ./data:/var/data
+    restart: unless-stopped

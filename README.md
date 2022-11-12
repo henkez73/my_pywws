@@ -1,10 +1,10 @@
 # MY_PYWWS
 
-Docker image based on Alpine Linux and PYWWS (18.10.1)- python software for USB Wireless Weather Stations
+Docker image based on Alpine Linux and PYWWS- python software for USB Wireless Weather Stations
 
 [Docker Hub](https://hub.docker.com/r/henkez/my_pywws/)
 
-Find out more about PYWWS here: https://github.com/jim-easterbrook/pywws
+Find out more about PYWWS here: <https://github.com/jim-easterbrook/pywws>
 
 Use `--privileged` to give access to USB devices
 

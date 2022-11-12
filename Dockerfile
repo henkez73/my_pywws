@@ -1,24 +1,17 @@
-FROM alpine:latest
+FROM python:alpine3.16
 
 LABEL maintainer "Henkez <henk.wobbes(at)gmail.com>"
 
-RUN apk add --no-cache python3 \
-    libusb \
-    python3-dev \
-    py3-cffi \
-    py3-pytest \
-    py3-cryptography \
-    py3-paramiko \
+RUN apk add --no-cache \
+    libusb-dev \
     openssl \
     libc-dev \
     ca-certificates \
     gcc \
     gnuplot \
-    && update-ca-certificates
+    && update-ca-certificates 2>/dev/null || true
 
-RUN pip3 install --upgrade pip
-
-RUN pip3 install \
+RUN pip install --upgrade pip \
     libusb1 \
     tzlocal \
     pycrypto \
@@ -32,3 +25,4 @@ RUN pip3 install \
 
 VOLUME ["/var/data"]
 
+CMD ["pywws-livelog","/var/data"]
