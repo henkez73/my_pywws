@@ -1,5 +1,7 @@
 # MY_PYWWS
 
+![workflow](https://github.com/henkez73/my_pywws/actions/workflows/publish-docker-image.yaml/badge.svg)
+
 Docker image based on Alpine Linux and PYWWS- python software for USB Wireless Weather Stations
 
 [Docker Hub](https://hub.docker.com/r/henkez/my_pywws/)
