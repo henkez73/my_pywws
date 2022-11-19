@@ -15,12 +15,14 @@ RUN pip install --upgrade pip \
     libusb1 \
     tzlocal \
     pycrypto \
+    paramiko \
     paho-mqtt \
     croniter \
     python-daemon \
     requests \
     python-twitter \
     oauth2 \
+    sphinx \
     pywws
 
 VOLUME ["/var/data"]
